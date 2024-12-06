@@ -1,0 +1,108 @@
+/* Reset & Fonts */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+  
+  /* Login Container */
+  .login-container {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s;
+  }
+  
+  .input-group input:focus {
+    border: 1px solid #4a90e2;
+    outline: none;
+  }
+  
+  /* Button */
+  .login-btn {
+    width: 100%;
+    padding: 10px 0;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #9013fe;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    visibility: hidden;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
